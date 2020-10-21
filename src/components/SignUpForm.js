@@ -96,7 +96,7 @@ export default class SignUpForm extends Component {
       phoneNumber,
       website,
     } = this.state;
-    Axios.post("http://localhost:8000/api/charity", {
+    Axios.post(`${process.env.REACT_APP_API_URL}/api/charity`, {
       firstName,
       lastName,
       email,
