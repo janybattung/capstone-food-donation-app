@@ -78,11 +78,12 @@ function Navbar() {
                 className='nav-links-mobile'
                 onClick={closeMobileMenu}
               >
-                Sign Up
+                For charities not registered, CLICK HERE
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>Charity Registration</Button>}
+          {button && <Button buttonStyle='btn--outline'>For charities not registered, <br />
+          CLICK HERE</Button>}
           <Anchor>
             <Link href="#contact" title="contact" />
           </Anchor>,
