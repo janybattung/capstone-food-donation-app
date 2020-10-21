@@ -82,7 +82,7 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+          {button && <Button buttonStyle='btn--outline'>Charity Registration</Button>}
           <Anchor>
             <Link href="#contact" title="contact" />
           </Anchor>,

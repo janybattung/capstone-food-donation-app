@@ -102,7 +102,7 @@ render() {
   return (
     <div className='App'>
       <form onSubmit={this.handleSubmit}>
-        <h1>REGISTER FOR AN ACCOUNT</h1>
+        <h1>REGISTER A CHARITABLE ORGANIZATION</h1>
         <label>First Name: </label> 
         <input type="text" value={this.state.firstName} onChange={this.firsthandler} placeholder="name" /><br />
         <label>Last Name: </label> 
