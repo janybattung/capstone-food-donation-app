@@ -72,21 +72,19 @@ function Navbar() {
                 Contact
               </Link>
             </li>
-            <li>
+            <li  className='nav-item'>
               <Link
                 to='/sign-up'
-                className='nav-links-mobile'
+                className='nav-links'
                 onClick={closeMobileMenu}
               >
-                For charities not registered, CLICK HERE
+                For charities not registered, <br/> CLICK HERE
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>For charities not registered, <br />
-          CLICK HERE</Button>}
-          <Anchor>
-            <Link href="#contact" title="contact" />
-          </Anchor>,
+          {/* {button && <Button buttonStyle='btn--outline'>For charities not registered, <br />
+          CLICK HERE</Button>} */}
+          
         </div>
       </nav>
 
