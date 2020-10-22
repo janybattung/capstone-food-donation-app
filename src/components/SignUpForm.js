@@ -7,6 +7,7 @@ export default class SignUpForm extends Component {
     super(props);
 
     this.state = {
+      charityName: "",
       firstName: "",
       lastName: "",
       email: "",
@@ -21,6 +22,11 @@ export default class SignUpForm extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  namehandler = (event) => {
+    this.setState({
+      charityName: event.target.value,
+    });
+  };
   firsthandler = (event) => {
     this.setState({
       firstName: event.target.value,
@@ -82,9 +88,9 @@ export default class SignUpForm extends Component {
   };
 
   handleSubmit = (event) => {
-    alert(`${this.state.firstName} Registered Successfully!`);
     console.log(this.state);
     const {
+      charityName,
       firstName,
       lastName,
       email,
@@ -96,7 +102,9 @@ export default class SignUpForm extends Component {
       phoneNumber,
       website,
     } = this.state;
+
     Axios.post(`${process.env.REACT_APP_API_URL}/api/charity`, {
+      charityName,
       firstName,
       lastName,
       email,
@@ -108,7 +116,10 @@ export default class SignUpForm extends Component {
       phoneNumber,
       website,
     })
-      .then((res) => console.log(res))
+      .then((res) => {
+        console.log(res);
+        alert(`${this.state.firstName} Registered Successfully!`);
+      })
       .catch((err) => console.log(err));
     // this.setState({
     //   firstName: "",
@@ -130,6 +141,14 @@ export default class SignUpForm extends Component {
       <div className="App">
         <form onSubmit={this.handleSubmit}>
           <h1>REGISTER A CHARITABLE ORGANIZATION</h1>
+          <label>Charity Name: </label>
+          <input
+            type="text"
+            value={this.state.charityName}
+            onChange={this.namehandler}
+            placeholder="charity name"
+          />
+          <br />
           <label>First Name: </label>
           <input
             type="text"

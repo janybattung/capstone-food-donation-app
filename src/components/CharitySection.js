@@ -1,42 +1,44 @@
-import React from 'react';
-import '../App.css';
-import './CharitySection.css';
+import Axios from "axios";
+import React, { useEffect, useState } from "react";
+import "../App.css";
+import "./CharitySection.css";
 
 function CharitySection() {
+  const [charities, setcharities] = useState([]);
+
+  useEffect(() => {
+    Axios.get(`${process.env.REACT_APP_API_URL}/api/charity`)
+      .then((res) => {
+        console.log(res);
+        setcharities(res.data.rows);
+      })
+      .catch((err) => console.log(err));
+  }, []);
   return (
-    <div className='charity-container'>
+    <div className="charity-container">
       <h1>List of Charitable Organizations</h1>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum obcaecati nam quibusdam temporibus omnis sequi minus mollitia laboriosam hic, doloremque adipisci. Aperiam facere numquam est velit voluptas asperiores incidunt itaque!</p>
-      <section className='charity-item'>
-      <div>
-          <h3>Charity Name A</h3>
-          <p>2451 Mission Ave. San Jose, CA 95876</p>
-          <p>Description: Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-      <div>
-          <h3>Charity Name B</h3>
-          <p>7845 Peter St. San Jose, CA 95876</p>
-          <p>Description: Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-      <div>
-          <h3>Charity Name C</h3>
-          <p>1278 Neon Ave. San Jose, CA 95876</p>
-          <p>Description: Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-      <div>
-          <h3>Charity Name D</h3>
-          <p>87945 Camden Ave. San Jose, CA 95876</p>
-          <p>Description: Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-      <div>
-          <h3>Charity Name E</h3>
-          <p>7874 Merril St. San Jose, CA 95876</p>
-          <p>Description: Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-    </section>
-    
+      <section className="charity-item">
+        {charities.map((char) => {
+          return (
+            <div>
+              <h2>{char.charityname}</h2>
+              <h3>{char.firstname + " " + char.lastname}</h3>
+              <p>
+                {char.address1 +
+                  " " +
+                  char.address2 +
+                  " " +
+                  char.city +
+                  " " +
+                  char.state}
+              </p>
+              <p>{char.email + " " + char.phonenumber}</p>
+              <a href={char.website}>{char.website}</a>
+            </div>
+          );
+        })}
+      </section>
     </div>
-    
   );
 }
 
