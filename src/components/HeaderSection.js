@@ -7,7 +7,7 @@ import './HeaderSection.css';
 function HeaderSection() {
   return (
     <div className='header-container'>
-      <img className="headerImg" src="./images/food-donation.jpg" alt="food donation"/>
+      {/* <img className="headerImg" src="./images/food-donation.jpg" alt="food donation"/> */}
       <h1>BEAT HUNGER</h1>
       <p>Millions of families in America go hungry every year. Help us provide them with enough to eat.</p>
       <div className='header-btns'>
@@ -21,7 +21,7 @@ function HeaderSection() {
       </div>
       <div className='mission-container'>
       <h2>OUR MISSION</h2>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eum, excepturi rerum officia dolorum eveniet est ducimus quia natus eligendi debitis laborum accusamus odio, repudiandae illo quasi, quis corporis in?</p>
+      <p>Our focus with BEAT HUNGER is to help those people in dire need of help gain access to all the food they need. We are heavily committed to quality and value, and we always guarantee that you will feel great knowing the food you donated actually goes to people that really need it.</p>
       </div>
 
     </div>
