@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
-// const { LinkAnchor } = Anchor;
-
 function Navbar() {
   const [click, setClick] = useState(false);
 
@@ -65,9 +63,6 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          {/* {button && <Button buttonStyle='btn--outline'>For charities not registered, <br />
-          CLICK HERE</Button>} */}
-          
         </div>
       </nav>
 

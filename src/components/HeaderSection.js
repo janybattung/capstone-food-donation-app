@@ -6,18 +6,19 @@ import './HeaderSection.css';
 
 function HeaderSection() {
   return (
-    <div className='header-container'>
-      {/* <img className="headerImg" src="./images/food-donation.jpg" alt="food donation"/> */}
-      <h1>BEAT HUNGER</h1>
-      <p>Millions of families in America go hungry every year. Help us provide them with enough to eat.</p>
-      <div className='header-btns'>
-        <Button
-          className='btns'
-          // buttonStyle='btn--outline'
-          buttonSize='btn--large'
-        >
-          DONATE
-        </Button>
+    <div className='main-container'>
+      <div className='header-container'>
+        <h1>BEAT HUNGER</h1>
+        <p>Millions of families in America go hungry every year. Help us provide them with enough to eat.</p>
+        <div className='header-btns'>
+          <Button
+            className='btns'
+            // buttonStyle='btn--outline'
+            buttonSize='btn--large'
+          >
+            DONATE
+          </Button>
+        </div>
       </div>
       <div className='mission-container'>
       <h2>OUR MISSION</h2>

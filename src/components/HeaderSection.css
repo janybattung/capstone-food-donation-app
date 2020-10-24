@@ -1,6 +1,7 @@
 .header-container {
-    background: url('/images/food-donation.jpg') center center/cover no-repeat;
+    background: linear-gradient(0deg, rgba(3, 33, 88, 0.3), rgba(16, 3, 87, 0.3)),url('/images/food-donation.jpg') center center/cover no-repeat;
     /* background-color: lightgray; */
+    background-size:cover;
     height: 100vh;
     width: 100%;
     display: flex;
@@ -47,6 +48,10 @@
     text-align: center;
     width: 80%;
 }
+.btns {
+    background-color: #2D882D;
+}
+
 .header-btns {
     margin-top: 32px;
 }
