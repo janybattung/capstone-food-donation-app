@@ -13,7 +13,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: 24px;
+    margin-bottom: 10px;
+    margin-top: 0;
     padding: 24px;
     color: #fff;
   }
@@ -34,19 +35,19 @@
   }
   
   .footer-input {
-    width: 150px;
-    padding: 8px 20px;
-    border-radius: 2px;
+    /* width: 200px; */
+    /* padding: 2px 20px; */
+    /* border-radius: 1px; */
     margin-right: 10px;
     outline: none;
     border: none;
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 16px;
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
   }
   
   .footer-email-form h2 {
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   
   .footer-input::placeholder {
@@ -70,7 +71,7 @@
     align-items: center;
     width: 90%;
     max-width: 1000px;
-    margin: 40px auto 0 auto;
+    margin: 20px auto 0 auto;
   }
   
   .social-icons {

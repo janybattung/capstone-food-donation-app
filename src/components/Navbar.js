@@ -53,7 +53,7 @@ function Navbar() {
                 Contact
               </Link>
             </li>
-            <li  className='nav-item'>
+            <li  className='btn--outline'>
               <Link
                 to='/sign-up'
                 className='nav-links'
