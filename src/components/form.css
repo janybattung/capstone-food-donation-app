@@ -1,64 +1,71 @@
 body{
-    background-color: rgb(223, 221, 217);
-    background-size: cover;
-  }
-  h1{
-    font-size: 24px;
-    font-family: 'Lato', sans-serif;
-    margin: 10px 0 10px 0;
-  }
-  
-  input {
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: none;
-    border-radius: 5px;
-    background-color: rgb(255, 254, 249);
-    color: rgb(10, 10, 10);
-    font-family: Arial, Helvetica, sans-serif;
-  }
+  background-color: rgb(223, 221, 217);
+  background-size: cover;
+}
+h1{
+  font-size: 21px;
+  font-family: 'Lato', sans-serif;
+  margin: 10px 0 10px 0;
+  text-align: center;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+input, select {
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(255, 254, 249);
+  color: rgb(10, 10, 10);
+  font-family: Arial, Helvetica, sans-serif;
+}
 
-  input[type=submit] {
-    background-color: rgb(116, 49, 107);
-    border: none;
-    color:white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 20px 2px;
-    cursor: pointer;
-    border-radius: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 22px;
-  }
-  
-  select {
-    width: 20%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    border: none;
-    border-radius: 15px;
-    background-color: rgb(255, 255, 255);
-    color: rgb(10, 10, 10);
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  
-  .form-container{
-    background-color: rgb(95, 145, 165);
-    border-radius: 10px;
-    padding: 40px;
-    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
-    margin: 100px auto;
-    width: 500px;
-    height: 850px;
-    position: relative;
-    display: grid;
-    text-align: center;
-  }
+input[type=submit] {
+  background-color: rgb(116, 49, 107);
+  border: none;
+  color:white;
+  padding: 12px 50px;
+  text-decoration: none;
+  margin: 20px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  margin-left: 110px;
+}
+.form-label-input {
+  width: 100%;
+  margin-left: 40px;
+}
+.form-label {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+.form-input {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+.form-container{
+  background-color: rgb(95, 145, 165);
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  margin: 100px auto;
+  width: 40%;
+  height: 80%px;
+  position: relative;
+  display: grid;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
   @media screen and (max-width:900px){
   
       .main-contianer{
