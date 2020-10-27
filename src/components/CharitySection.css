@@ -1,13 +1,14 @@
 .charity-container {
-    background-color: lightgray;
-    height: 120vh;
-    width: 100%;
+    background-color: rgb(228, 39, 39);
+    height: 170vh;
+    width: 70%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+    /* box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2); */
     object-fit: contain;
+    
 }
 
 .charity-item {
@@ -59,18 +60,32 @@
   @media screen and (max-width: 768px) {
 
     .charity-container {
-        height: 150vh;
-        margin-bottom: 0;
-        text-align: center;
+        height: 1040px;
+        width: 100%;
+        text-align: left;
+    }
+    .charity-field {
+      margin-bottom: 20px;
+      margin-left: 40px;
+      width: 100%;
+    }
+
+    .name {
+      font-size: 18px;
     }
 
     .charity-container > h1 {
-      font-size: 40px;
-      margin-top: -200px;
+      font-size: 24px;
+      margin-top: -20px;
     }
   
-    .charity-container > p {
-      font-size: 19px;
-      text-align: center;
+    .charity-field > p {
+      font-size: 16px;
+    }
+    .charity-field > h2 {
+      font-size: 20px;
+    }
+    .charity-field > h3 {
+      font-size: 16px;
     }
   }

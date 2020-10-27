@@ -56,7 +56,7 @@ function Navbar() {
             <li  className='btn--outline'>
               <Link
                 to='/sign-up'
-                className='nav-links'
+                className='nav-links-bottom'
                 onClick={closeMobileMenu}
               >
                 For charities not registered, <br/> CLICK HERE

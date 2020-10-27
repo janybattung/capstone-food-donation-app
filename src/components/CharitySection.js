@@ -20,9 +20,9 @@ function CharitySection() {
       <section className="charity-item">
         {charities.map((char) => {
           return (
-            <div>
+            <div className="charity-field">
               <h2>{char.charityname}</h2>
-              <h3>{char.firstname + " " + char.lastname}</h3>
+              <h3 className="name">{char.firstname + " " + char.lastname}</h3>
               <p>
                 {char.address1 +
                   " " +
