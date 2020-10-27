@@ -66,15 +66,39 @@ input[type=submit] {
   display: table;
   clear: both;
 }
-  @media screen and (max-width:900px){
-  
-      .main-contianer{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: space-evenly; 
-        
-      }
+@media screen and (max-width:960px){
+  .main-contianer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly; 
     
+  }
+
+}
+@media screen and (max-width: 768px) {
+    .form-label, .form-input {
+      width: 100%;
+      margin-top: 0;
+      
     }
-  
+    .form-container {
+      width: 95%;
+      padding: 0;
+      margin: 0;
+
+    }
+    .row {
+      display: flex;
+      flex-flow: row wrap;
+    }
+   
+    h1 {
+      font-size: 16px;
+      width: 90%;
+    }
+    .form-btn {
+      padding: 0;
+      margin-left: -80px;
+    }
+}

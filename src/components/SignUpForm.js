@@ -292,7 +292,7 @@ export default class SignUpForm extends Component {
                 </div>
               </div>
                   {this.state.error && <div>{this.state.error}</div>}
-                  <input type="submit" value="Register" />
+                  <div className="form-btn"><input type="submit" value="Register" /></div>
             </div>
         </form>
       </div>

@@ -19,7 +19,7 @@
 }
 
 .mission-container {
-    background-color: #fa4f83;
+    background-color: #fabe4f;
     height: 60vh;
     width: 100%;
     display: flex;
@@ -47,13 +47,13 @@
     font-family: 'Lato', sans-serif;
 }
 .mission-container > h2 {
-    color: #fff;
+    color: rgb(32, 30, 30);
     font-size: 50px;
     margin-top: -70px;
 }
 .mission-container > p {
     margin-top: 8px;
-    color: #fff;
+    color: rgb(17, 16, 16);
     font-size: 21px;
     text-align: center;
     width: 60%;
