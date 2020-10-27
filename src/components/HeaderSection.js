@@ -8,6 +8,7 @@ function HeaderSection() {
   return (
     <div className='main-container'>
       <div className='header-container'>
+        <img className='img-header' src="/images/food-donation.jpg" alt="food donation"/>
         <h1>Beat Hunger</h1>
         <p>Millions of families in America go hungry every year. Help us provide them with enough to eat.</p>
         <div className='header-btns'>

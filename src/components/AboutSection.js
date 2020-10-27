@@ -5,6 +5,7 @@ import './AboutSection.css';
 function AboutSection() {
   return (
     <div className='about-container'>
+      <img className='img-about' src="/images/helping-hand.jpg" alt="Helping hand"/>
       <h1>Who We Are</h1>
       <p>There are a lot of people all over the world barely affording a meal every day. Since the world population is growing, there are more and more mouths to feed, and we just can’t afford wasting any resources. The best thing that we can do is to immediately avoid situations where we throw food away and instead we donate it. That’s where BEAT HUNGER comes into play.
       Our focus with BEAT HUNGER is to help those people in dire need of help gain access to all the food they need. We are heavily committed to quality and value, and we always guarantee that you will feel great knowing the food you donated actually goes to people that really need it.

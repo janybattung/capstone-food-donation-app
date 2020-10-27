@@ -17,10 +17,10 @@
   }
   
   .btn--outline {
-    background-color: #0095b3;
-    color: white;
+    background-color: #87c830;
+    color: black;
     padding: 8px 20px;
-    border: 1px solid  #0095b3;
+    border: 1px solid  #87c830;
     transition: all 0.3s ease-out;
   }
   

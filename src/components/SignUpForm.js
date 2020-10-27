@@ -18,6 +18,7 @@ export default class SignUpForm extends Component {
       zipCode: "",
       phoneNumber: "",
       website: "",
+      error: "",
     };
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -88,7 +89,8 @@ export default class SignUpForm extends Component {
   };
 
   handleSubmit = (event) => {
-    console.log(this.state);
+    event.preventDefault();
+
     const {
       charityName,
       firstName,
@@ -103,6 +105,24 @@ export default class SignUpForm extends Component {
       website,
     } = this.state;
 
+    if (
+      !(
+        charityName &&
+        firstName &&
+        lastName &&
+        email &&
+        address1 &&
+        address2 &&
+        city &&
+        state &&
+        zipCode &&
+        phoneNumber &&
+        website
+      )
+    )
+      return this.setState({ error: "All fields required !" });
+
+    this.setState({ error: "" });
     Axios.post(`${process.env.REACT_APP_API_URL}/api/charity`, {
       charityName,
       firstName,
@@ -133,102 +153,158 @@ export default class SignUpForm extends Component {
     //   website: "",
     //   zipCode: "",
     // });
-    event.preventDefault();
   };
 
   render() {
     return (
-      <div className="App">
+      <div className="form-container">
         <form onSubmit={this.handleSubmit}>
           <h1>REGISTER A CHARITABLE ORGANIZATION</h1>
-          <label>Charity Name: </label>
-          <input
-            type="text"
-            value={this.state.charityName}
-            onChange={this.namehandler}
-            placeholder="charity name"
-          />
-          <br />
-          <label>First Name: </label>
-          <input
-            type="text"
-            value={this.state.firstName}
-            onChange={this.firsthandler}
-            placeholder="name"
-          />
-          <br />
-          <label>Last Name: </label>
-          <input
-            type="text"
-            value={this.state.lastName}
-            onChange={this.lasthandler}
-            placeholder="name"
-          />
-          <br />
-          <label>Email: </label>
-          <input
-            type="email"
-            value={this.state.email}
-            onChange={this.emailhandler}
-            placeholder="email"
-          />
-          <br />
-          <label>Address1: </label>
-          <input
-            type="text"
-            value={this.state.address1}
-            onChange={this.address1handler}
-            placeholder="address1"
-          />
-          <br />
-          <label>Address2: </label>
-          <input
-            type="text"
-            value={this.state.address2}
-            onChange={this.address2handler}
-            placeholder="address2"
-          />
-          <br />
-          <label>City: </label>
-          <input
-            type="text"
-            value={this.state.city}
-            onChange={this.cityhandler}
-            placeholder="city"
-          />
-          <br />
-          <label>State: </label>
-          <input
-            type="text"
-            value={this.state.state}
-            onChange={this.statehandler}
-            placeholder="state"
-          />
-          <br />
-          <label>Zip Code: </label>
-          <input
-            type="number"
-            value={this.state.zipCode}
-            onChange={this.ziphandler}
-            placeholder="zip code"
-          />
-          <br />
-          <label>Phone Number: </label>
-          <input
-            type="tel"
-            value={this.state.phoneNumber}
-            onChange={this.phonehandler}
-            placeholder="phone number"
-          />
-          <br />
-          <label>Website: </label>
-          <input
-            type="url"
-            value={this.state.website}
-            onChange={this.websitehandler}
-            placeholder="website"
-          />
-          <br />
+          <table>
+            <tr>
+              <td>
+                <label>Charity Name: </label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  value={this.state.charityName}
+                  onChange={this.namehandler}
+                  placeholder="charity name"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>First Name: </label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  value={this.state.firstName}
+                  onChange={this.firsthandler}
+                  placeholder="Jane"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Last Name: </label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  value={this.state.lastName}
+                  onChange={this.lasthandler}
+                  placeholder="Smith"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Email: </label>
+              </td>
+              <td>
+                <input
+                  type="email"
+                  value={this.state.email}
+                  onChange={this.emailhandler}
+                  placeholder="email@email.com"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Address1: </label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  value={this.state.address1}
+                  onChange={this.address1handler}
+                  placeholder="address1"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Address2: </label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  value={this.state.address2}
+                  onChange={this.address2handler}
+                  placeholder="address2"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>City: </label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  value={this.state.city}
+                  onChange={this.cityhandler}
+                  placeholder="city"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>State: </label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  value={this.state.state}
+                  onChange={this.statehandler}
+                  placeholder="state"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Zip Code: </label>
+              </td>
+              <td>
+                <input
+                  type="number"
+                  value={this.state.zipCode}
+                  onChange={this.ziphandler}
+                  placeholder="zip code"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Phone Number: </label>
+              </td>
+              <td>
+                <input
+                  type="tel"
+                  value={this.state.phoneNumber}
+                  onChange={this.phonehandler}
+                  placeholder="1234567890"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label>Website: </label>
+              </td>
+              <td>
+                <input
+                  type="url"
+                  value={this.state.website}
+                  onChange={this.websitehandler}
+                  placeholder="http://hello.com"/>
+              </td>
+            </tr>
+          </table>
+          {this.state.error && <div>{this.state.error}</div>}
           <input type="submit" value="Register" />
         </form>
       </div>
