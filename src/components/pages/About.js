@@ -7,7 +7,7 @@ function About() {
     return (
         <div>
            <AboutSection />
-           <Footer />
+           {/* <Footer /> */}
         </div>
     )
 }
