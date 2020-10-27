@@ -1,6 +1,6 @@
 import React from 'react';
 import AboutSection from '../AboutSection';
-import Footer from '../Footer';
+// import Footer from '../Footer';
 
 
 function About() {
