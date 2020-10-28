@@ -1,16 +1,7 @@
 * {
   box-sizing: border-box;
 }
-
-
 .contact-container {
-  /* margin: 100px auto;
-  width: 100%;
-  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
-  /* position: relative; */
-  /* border-radius: 10px;
-  height: 500px;
-  display: flex;  */
   background-color: gray;
   max-width: 100%;
   margin: 20px 20px 120px 120px;
@@ -20,10 +11,7 @@
 .img-contact {
   width: 100%;
   height: 100%;
-  /* top: 50%;
-  left: 50%; */
   transform: translate(-50%, -50%);
-  /* border-radius: 10px 0 0 10px; */
 } 
 .box-img img {
   position: absolute;
@@ -42,10 +30,7 @@
   height: 300px;
   float: right;
   position: relative;
-  /* text-align: center; */
   width: 50%;
-  /* top: 50%; */
-  /* transform: translateY(-50%); */
   overflow: hidden;
 }
 .text {
@@ -70,17 +55,29 @@
 }
 
 @media screen and (max-width: 960px) {
-    .contact-container > h1 {
-      font-size: 70px;
-      margin-top: -200px;
-    }
-    .contact-container > p {
-        margin-top: 20px;
-        width: 80%;
-        text-align: center;
-        color: black;
-        font-size: 26px;
-    }
+  .box-img,
+  .box-text {
+   max-width: 100%;
+  }
+  .contact-container {
+    background-color: maroon;
+    margin-top: 200px;
+  }
+  .img-contact {
+    width: 100%;
+    height: 200px;
+  }
+  .text > h1 {
+   color: black;
+   font-size: 34px;
+   margin-bottom: 20px;
+}
+ 
+ .text > p {
+     color: black;
+     font-size: 21px;
+     text-align: center;
+ }
 
   }
   
