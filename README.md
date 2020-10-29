@@ -8,5 +8,5 @@ This project is called Beat Hunger.
 Our focus with BEAT HUNGER is to help those people in dire need of help gain access to all the food they need. It will connect the food donors and organizations that collect food for the needy. We are heavily committed to quality and value, and we always guarantee that you will feel great knowing the food you donated actually goes to people that really need it.
 
 
-![home page](public/images/home-page.png)
+![home page](public/images/home-page.PNG)
 
