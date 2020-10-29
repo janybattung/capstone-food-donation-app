@@ -16,7 +16,7 @@ function CharitySection() {
   }, []);
   return (
     <div className="charity">
-        <div className="title"><h1>List of Charitable Organizations</h1></div>
+        <h1>List of Charitable Organizations</h1>
         <div className="charity-container">
         <div className="img-container">
           <img className='img-contact' src="/images/charity.jpg" alt="Contact Us"/>

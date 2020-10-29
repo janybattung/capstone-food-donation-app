@@ -50,35 +50,26 @@ body {
 
   }
   
-  @media screen and (max-width: 768px) {
-
-    .charity-container {
-        height: 1040px;
-        width: 100%;
-        text-align: left;
-    }
-    .charity-field {
-      margin-bottom: 20px;
-      margin-left: 40px;
-      width: 100%;
-    }
-
-    .name {
-      font-size: 18px;
-    }
-
-    .charity-container > h1 {
-      font-size: 24px;
-      margin-top: -20px;
-    }
-  
-    .charity-field > p {
-      font-size: 16px;
-    }
-    .charity-field > h2 {
-      font-size: 20px;
-    }
-    .charity-field > h3 {
-      font-size: 16px;
-    }
+@media screen and (max-width: 768px) {
+  .charity-container {
+    width: 95%;
+    height: 150vh;
+    margin-left: -45px;
   }
+  .img-container {
+    width: 100%;
+    margin-top: 0;
+  }
+  .img-contact {
+    margin-top: -50px;
+  }
+  .charity-item {
+    margin-top: 250px;
+    position: absolute;
+    /* left: 0; */
+    margin-left: -25px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
