@@ -35,20 +35,19 @@ body {
 }
 
 @media screen and (max-width: 960px) {
-    .charity-container > h1 {
-      font-size: 70px;
-      margin-top: -200px;
-      text-align: center;
-    }
-    .charity-container > p {
-        margin-top: 20px;
-        width: 80%;
-        text-align: center;
-        color: black;
-        font-size: 26px;
-    }
-
+  .charity-container > h1 {
+    font-size: 70px;
+    margin-top: -200px;
+    text-align: center;
   }
+  .charity-container > p {
+      margin-top: 20px;
+      width: 80%;
+      text-align: center;
+      color: black;
+      font-size: 26px;
+  }
+}
   
 @media screen and (max-width: 768px) {
   .charity-container {
@@ -66,7 +65,6 @@ body {
   .charity-item {
     margin-top: 250px;
     position: absolute;
-    /* left: 0; */
     margin-left: -25px;
   }
   h1 {
