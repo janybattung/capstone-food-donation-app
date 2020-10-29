@@ -55,10 +55,10 @@
 }
 
 @media screen and (max-width: 960px) {
-  .box-img,
+  /* .box-img,
   .box-text {
    max-width: 100%;
-  }
+  } */
   .contact-container {
     background-color: maroon;
     margin-top: 200px;
@@ -67,18 +67,6 @@
     width: 100%;
     height: 200px;
   }
-  .text > h1 {
-   color: black;
-   font-size: 34px;
-   margin-bottom: 20px;
-}
- 
- .text > p {
-     color: black;
-     font-size: 21px;
-     text-align: center;
- }
-
   }
   
 @media screen and (max-width: 768px) {

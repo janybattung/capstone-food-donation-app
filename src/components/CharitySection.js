@@ -15,29 +15,34 @@ function CharitySection() {
       .catch((err) => console.log(err));
   }, []);
   return (
-    <div className="charity-container">
-      <h1>List of Charitable Organizations</h1>
-      <section className="charity-item">
-        {charities.map((char) => {
-          return (
-            <div className="charity-field">
-              <h2>{char.charityname}</h2>
-              <h3 className="name">{char.firstname + " " + char.lastname}</h3>
-              <p>
-                {char.address1 +
-                  " " +
-                  char.address2 +
-                  " " +
-                  char.city +
-                  " " +
-                  char.state}
-              </p>
-              <p>{char.email + " " + char.phonenumber}</p>
-              <a href={char.website}>{char.website}</a>
-            </div>
-          );
-        })}
-      </section>
+    <div className="charity">
+        <div className="title"><h1>List of Charitable Organizations</h1></div>
+        <div className="charity-container">
+        <div className="img-container">
+          <img className='img-contact' src="/images/charity.jpg" alt="Contact Us"/>
+        </div>
+        <section className="charity-item">
+          {charities.map((char) => {
+            return (
+              <div className="charity-field">
+                <h2>{char.charityname}</h2>
+                <h3 className="name">{char.firstname + " " + char.lastname}</h3>
+                <p>
+                  {char.address1 +
+                    " " +
+                    char.address2 +
+                    " " +
+                    char.city +
+                    " " +
+                    char.state}
+                </p>
+                <p>{char.email + " " + char.phonenumber}</p>
+                <a href={char.website}>{char.website}</a>
+              </div>
+            );
+          })}
+        </section>
+      </div>
     </div>
   );
 }
