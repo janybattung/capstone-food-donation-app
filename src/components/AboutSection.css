@@ -51,7 +51,7 @@ body {
   @media screen and (max-width: 768px) {
     .about-container {
       margin-top: 130px;
-      height: 900px;
+      height: 920px;
       width: 100%;
       box-shadow: none;
     }
