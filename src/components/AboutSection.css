@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: white;
 }
 .about-container {
   position: absolute;
@@ -11,111 +10,58 @@ body {
   transform: translate(-50%,-50%);
   padding: 40px;
   box-sizing: border-box;
-  background-color: rgb(255, 215, 106);
   border-radius: 4px;
   box-shadow: 0 5px 15px rgba(0,0,0,.5);
   display: flex;
   transition: .5s;
+  background-color: rgb(255, 242, 121);
 }
-
 .about-container:hover {
   box-shadow: 0 15px 30px rgba(0,0,0,.5);
 }
-
-/* .img-about {
-    width: 700px;
-    height: 200px;
-} */
-
-.about-container .left {
-  width: 250px;
-  flex: 0 0 150px;
-}
-
-.about-container .left img{
-  max-width: 100%;
-}
-
-.about-container .right {
-  padding-left: 20px;
-}
-
-.about-container .right h1{
+.about-container .charity-content h1{
   margin: 0;
   padding-left: 0;
+  font-size: 30px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.about-container .charity-content p {
+  margin: 0;
+  padding: 10px 0 50px 0;
+  text-align: justify;
   font-size: 18px;
 }
 
-.about-container .right p {
-  margin: 0;
-  padding: 10px 0 0;
-  text-align: justify;
-}
-
-/* .about-container {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-shadow: inset 0 0 0 1000px rgba(14, 4, 4, 0.582);
-    object-fit: contain;
-} */
-
-/* .about-container > h1 {
-    color: white;
-    font-size: 50px;
-    margin-top: -70px;
-}
-  
-.about-container > p {
-    margin-top: 30px;
-    width: 80%;
-    color: white;
-    font-size: 18px;
-    text-align: center;
-} */
-
 @media screen and (max-width: 960px) {
     .about-container > h1 {
-      font-size: 70px;
-      margin-top: -200px;
+      font-size: 30px;
+      padding-bottom: 20px;
     }
     .about-container > p {
-        margin-top: 20px;
+        /* margin-top: 20px; */
         width: 80%;
         text-align: center;
         color: black;
-        font-size: 26px;
+        font-size: 18px;
     }
 
   }
   
   @media screen and (max-width: 768px) {
-    .img-about {
-        margin-top: -610px;
-        width: 100%;
-        height: 45%;
-        position: absolute;
-    }
-  
     .about-container {
-      height: 1320px;
+      margin-top: 130px;
+      height: 900px;
       width: 100%;
       box-shadow: none;
     }
-
     .about-container > h1 {
-      font-size: 40px;
-      /* margin-top: -20px; */
-      margin-bottom: 80px;
+      font-size: 30px;
       color: rgb(34, 33, 33);
     }
   
     .about-container > p {
-      padding-top: 40px;
-      font-size: 17px;
+      font-size: 18px;
       text-align: start;
     }
   }

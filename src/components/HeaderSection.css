@@ -1,6 +1,4 @@
 .header-container {
-    /* background: linear-gradient(0deg, rgba(3, 33, 88, 0.3), rgba(16, 3, 87, 0.3)),url('/images/food-donation.jpg') center center/cover no-repeat; */
-    /* background-size:cover; */
     height: 100vh;
     width: 100%;
     display: flex;
@@ -17,9 +15,8 @@
     z-index: -1;
     object-fit: cover;
 }
-
 .mission-container {
-    background-color: #ffc966;
+    background-color: #fffda3;
     height: 60vh;
     width: 100%;
     display: flex;
@@ -30,14 +27,12 @@
     object-fit: contain;
     margin-top: 0;
 }
-
 .header-container > h1 {
     color: white;
     font-size: 100px;
     margin-top: -150px;
     font-family: 'Sacramento', cursive;
 }
-  
 .header-container > p {
     margin-top: 0;
     color: white;
@@ -48,8 +43,9 @@
 }
 .mission-container > h2 {
     color: rgb(32, 30, 30);
-    font-size: 50px;
+    font-size: 55px;
     margin-top: -70px;
+    font-family: 'Oswald', sans-serif;
 }
 .mission-container > p {
     margin-top: 8px;
@@ -58,14 +54,13 @@
     text-align: center;
     width: 60%;
 }
-
 .header-btns {
     margin-top: 32px;
 }
 @media screen and (max-width: 960px) {
     .header-container > h1 {
-      font-size: 70px;
-      
+        font-size: 70px;
+        
     }
     .header-container > p {
         width: 80%;
@@ -76,9 +71,8 @@
     .mission-container > h2 {
         font-size: 50px;
         margin-top: -20px;
-      }
-  }
-  
+        }
+}
   @media screen and (max-width: 768px) {
     .img-header {
         width: 100%;
@@ -98,12 +92,12 @@
       text-align: center;
     }
     .mission-container {
-        height: 60vh;
+        height: 43vh;
         width: 100%;
     }
     .mission-container > h2 {
         font-size: 24px;
-        margin-top: -10px;
+        margin-top: -5px;
     }
 
     .mission-container > p {
