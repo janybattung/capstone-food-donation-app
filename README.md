@@ -9,4 +9,8 @@ Our focus with BEAT HUNGER is to help those people in dire need of help gain acc
 
 
 ![home page](public/images/home-page.PNG)
+![about page](public/images/who-we-are-page.PNG)
+![charities page](public/images/charity-page.PNG)
+![contact page](public/images/contact-page.PNG)
+![form page](public/images/form-page.PNG)
 
